@@ -10,6 +10,10 @@ get "/categories" do
   categories.to_json
 end
 
+get "/customers" do
+  customers = Customer.all
+  customers.to_json
+end
 get "/categories/:category_name" do
   category = Category.find_by(params[:name])
   category.to_json
@@ -27,6 +31,19 @@ end
 get "/expenses" do
   expenses = Expense.all
   expenses.to_json
+end
+
+get "/items" do
+  items = Item.all
+  items.to_json
+end
+
+patch '/items/:id' do
+  item = Item.find(params[:id])
+  item = item.update(
+    price: params[:price]
+  )
+  item.to_json
 end
 
 delete "/expenses/:id" do

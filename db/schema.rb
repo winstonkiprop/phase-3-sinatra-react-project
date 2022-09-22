@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_09_21_201255) do
+ActiveRecord::Schema.define(version: 2022_09_22_113831) do
 
   create_table "categories", force: :cascade do |t|
     t.string "category_name"
@@ -37,5 +37,7 @@ ActiveRecord::Schema.define(version: 2022_09_21_201255) do
     t.string "item_name"
     t.integer "price"
     t.integer "quantity"
+    t.integer "category_id"
   end
+
 end

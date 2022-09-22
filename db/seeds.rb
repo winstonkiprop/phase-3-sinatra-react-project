@@ -24,32 +24,38 @@ items = Item.create ([
     {
      item_name: "sony televison",
      price: 10000,
-     quantity: 0
+     quantity: 0,
+     category_id: 1
  },
  {
      item_name: "fridge",
      price: 40000,
-     quantity: 0
+     quantity: 0,
+     category_id: 1
  },
  {
      item_name: "microwave",
      price: 25000,
-     quantity: 0
+     quantity: 0,
+     category_id: 1
  },
     {
         item_name: "Netflix subscription",
         price: 2000,
-        quantity: 0
+        quantity: 0,
+        category_id:2
     },
     {
         item_name: "dental checkup",
         price: 5000,
-        quantity: 0
+        quantity: 0,
+        category_id: 3
     },
     {
     item_name: "grocery",
     price: 10000,
-    quantity: 1
+    quantity: 1,
+    category_id: 4
 }
  ])
 customers = Customer.create([
